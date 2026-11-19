@@ -192,6 +192,11 @@ well under 0.5 ms of replay CPU and under 0.5 ms of GPU per frame.
   benchmarks. Add them in the same style before optimising those modules.
 - Multi-threaded `WaitSyncHost` against concurrent `RecordFenceSync`.
 
+### Reference: another NVN implementation
+
+`reference/nxnative-nvn/` holds nxnative's NVN-on-Metal layer (MIT, not built). Use it to check NVN
+behaviour, for example sync/event/counter semantics or the prototype list. Read its `SOURCE.md` first.
+
 ### Porting back
 
 A kept change is only real once it is ported to `C:\dev\eglantine-vtxhle` and the game agrees: run the
